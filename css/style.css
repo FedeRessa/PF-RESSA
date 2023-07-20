@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0; }
-  * .titulos {
-    font-family: "Roboto", sans-serif; }
-
 @font-face {
   font-family: "Roboto", sans-serif;
   src: url(../recursos/fuentes/NunitoSans-Black.ttf); }
@@ -15,22 +8,13 @@
   font-family: "Nunito", sans-serif;
   src: url(../recursos/fuentes/NunitoSans-Regular.ttf); }
 
-/* MAIN */
-.flex-padre {
-  background-color: #161816;
-  padding: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: white; }
-
 /* HEADER */
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #161816; }
+  background-color: #161816;
+  font-family: "Nunito", sans-serif; }
 
 .header img {
   width: 275px; }
@@ -64,10 +48,16 @@ ul {
   .header ul {
     padding: 0 50px; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+/* MAIN */
+.flex-padre {
+  background-color: #161816;
+  padding: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Nunito", sans-serif; }
 
 /*:::::Pie de Pagina*/
 .pie-pagina {
@@ -136,6 +126,11 @@ ul {
     grid-gap: 30px;
     padding: 35px 0px; } }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .contenedor {
   background-color: #161816;
   color: white;
@@ -173,3 +168,9 @@ section img:hover {
 .contendor-shop {
   display: flex;
   justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0; }
+  * .titulos {
+    font-family: "Roboto", sans-serif; }

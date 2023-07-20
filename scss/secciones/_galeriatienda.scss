@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    background-color: $fondo-pages;
+    color: white;
+    text-align: center;
+
+}
+
+.container-text-center {
+    display: flex;
+    justify-content: center;
+
+}
+
+section{
+    display: flex;
+    width: 1345px;
+    height: 430px;
+    align-items: center;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter:  contrast(120%);
+}
+.shop {
+    width: 294px;
+    height: 250px;
+    margin: 46px;
+    background-color: $fondo-pages; 
+}
+
+.contendor-shop {
+    display: flex;
+    justify-content: center;
+    
+}

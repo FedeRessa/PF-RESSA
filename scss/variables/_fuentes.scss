@@ -3,3 +3,13 @@
 
 $titulos: 'Roboto', sans-serif;
 $textos: 'Nunito', sans-serif;
+
+@font-face {
+    font-family: $titulos;
+    src: url(../recursos/fuentes/NunitoSans-Black.ttf);
+}
+
+@font-face {
+    font-family: $textos;
+    src: url(../recursos/fuentes/NunitoSans-Regular.ttf);
+}
