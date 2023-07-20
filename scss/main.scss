@@ -101,7 +101,6 @@ ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /*:::::Pie de Pagina*/
@@ -136,11 +135,13 @@ ul {
     color: $footer-color-font;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: $titulos;
 }
 
 .pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
+    font-family: $textos;
 }
 
 .pie-pagina .grupo-1 .red-social a {
@@ -169,6 +170,7 @@ ul {
 
 .pie-pagina .grupo-2 small {
     font-size: 15px;
+    font-family: $titulos;
 
 }
 
