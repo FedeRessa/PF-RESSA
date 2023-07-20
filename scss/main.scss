@@ -1,5 +1,5 @@
 @import "./variables/colores";
-
+@import "./variables/fuentes";
 
 
 
@@ -8,7 +8,7 @@
     padding: 0;
 
     .titulos {
-        font-family: "NunitoSans-Black";
+        font-family: $titulos;
     }
 }
 
@@ -17,12 +17,12 @@
 
 
 @font-face {
-    font-family: "NunitoSans-Black";
+    font-family: $titulos;
     src: url(../recursos/fuentes/NunitoSans-Black.ttf);
 }
 
 @font-face {
-    font-family: "NunitoSans-Regular";
+    font-family: $textos;
     src: url(../recursos/fuentes/NunitoSans-Regular.ttf);
 }
 

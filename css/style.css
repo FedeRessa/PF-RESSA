@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0; }
   * .titulos {
-    font-family: "NunitoSans-Black"; }
+    font-family: "Roboto", sans-serif; }
 
 @font-face {
-  font-family: "NunitoSans-Black";
+  font-family: "Roboto", sans-serif;
   src: url(../recursos/fuentes/NunitoSans-Black.ttf); }
 
 @font-face {
-  font-family: "NunitoSans-Regular";
+  font-family: "Nunito", sans-serif;
   src: url(../recursos/fuentes/NunitoSans-Regular.ttf); }
 
 /* MAIN */
