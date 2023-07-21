@@ -1,6 +1,6 @@
 /* HEADER */
 
-.header {
+.header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,9 +9,23 @@
     z-index: 2;
 }
 
+.header-otras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $textos;
+    background-color: $fondo-pages;
+}
+
+
 .header img {
     width: 275px;
 }
+
+.header-otras img {
+    width: 275px;
+}
+
 
 .header ul {
     display: flex;
@@ -20,6 +34,12 @@
 
 .header a {
     color: $blanco;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.header-otras a {
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     margin: 10px;
