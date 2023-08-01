@@ -92,7 +92,10 @@ form {
   border-radius: 20px;
   text-align: center;
   width: 340px;
-  margin-bottom: 30px; }
+  height: 433px;
+  margin-bottom: 30px;
+  display: grid;
+  justify-content: center; }
 
 input {
   display: flex;
@@ -121,7 +124,7 @@ input {
 .pie-pagina {
   width: 100%;
   background-color: #0a141d;
-  position: relative;
+  position: absolute;
   z-index: 2; }
 
 .pie-pagina .grupo-1 {
@@ -152,7 +155,8 @@ input {
 .pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  text-align: justify; }
 
 .pie-pagina .grupo-1 .red-social a {
   display: inline-block;

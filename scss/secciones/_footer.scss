@@ -2,8 +2,9 @@
 .pie-pagina {
     width: 100%;
     background-color: #0a141d;
-    position: relative;
+    position: absolute;
     z-index: 2;
+
 }
 
 .pie-pagina .grupo-1 {
@@ -33,12 +34,14 @@
     margin-bottom: 25px;
     font-size: 20px;
     font-family: $titulos;
+    
 }
 
 .pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
     font-family: $textos;
+    text-align:justify;
 }
 
 .pie-pagina .grupo-1 .red-social a {
