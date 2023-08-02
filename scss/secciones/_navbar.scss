@@ -1,6 +1,16 @@
-.nav{
+.nav {
     position: relative;
     z-index: 2;
 }
 
+@media screen and (max-width:400px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: space-evenly
+    }
 
+}

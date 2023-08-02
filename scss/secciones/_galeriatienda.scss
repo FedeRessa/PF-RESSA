@@ -15,7 +15,6 @@
 
 section{
     display: flex;
-    width: 1345px;
     height: 430px;
     align-items: center;
 }
@@ -27,6 +26,7 @@ section img{
     opacity: 8;
     transition: .5s ease;
 }
+
 
 section img:hover{
     cursor: crosshair;
@@ -103,4 +103,12 @@ img{
     padding: 15px 10px;
     cursor: pointer;
 }
+
+.galeria{
+    width: 75 vw;
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;    
+}
+
 
