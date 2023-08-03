@@ -13,13 +13,13 @@
 
 }
 
-section{
+section {
     display: flex;
     height: 430px;
     align-items: center;
 }
 
-section img{
+section img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -28,41 +28,41 @@ section img{
 }
 
 
-section img:hover{
+section img:hover {
     cursor: crosshair;
     width: 300px;
     opacity: 1;
-    filter:  contrast(120%);
+    filter: contrast(120%);
 }
 
 /*shop*/
 
-img{
+img {
     max-width: 100%;
 }
 
-.container-items{
+.container-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-.item{
+.item {
     border-radius: 10px;
 }
 
-.item:hover{
+.item:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.info-product{
+.info-product {
     padding: 15px 30px;
     font-family: $titulos;
     background-color: $footer-copy;
 }
 
-.item img{
+.item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -70,32 +70,32 @@ img{
     transition: all .5s;
 }
 
-.item figure{
+.item figure {
     overflow: hidden;
 }
 
-.item:hover img{
+.item:hover img {
     transform: scale(1.2);
 }
 
 
-.info-product{
+.info-product {
     padding: 15px 30px;
     line-height: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-family: $textos;
-    
+
 }
 
-.price{
+.price {
     font-size: 18px;
     font-weight: 900;
     font-family: $textos;
 }
 
-.info-product button{
+.info-product button {
     border: none;
     background: none;
     background-color: $fondo-pages;
@@ -104,11 +104,19 @@ img{
     cursor: pointer;
 }
 
-.galeria{
+.galeria {
     width: 75 vw;
     max-width: 600px;
     min-width: 320px;
-    margin: auto;    
+    margin: auto;
 }
 
 
+@media screen and (max-width:800px) {
+    .container-items {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+}

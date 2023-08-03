@@ -11,7 +11,7 @@
     gap: 10px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:800px) {
     .flex-padre {
         background-color: #161816;
         display: flex;
@@ -24,10 +24,11 @@
 
     }
 }
+
 @media screen and (max-width:400px) {
     .flex-contacto {
         background-color: #161816;
-        
+
         display: flex;
         color: white;
         font-family: "Nunito", sans-serif;
@@ -76,18 +77,56 @@ input {
 
 }
 
-.contenido p {
-    padding: 50px;
-    box-shadow: inset 0 0 250px rgba(10, 20, 29, 3.50);
-    padding: 10px 25px;
-    margin: 10%;
-    border-radius: 25px;
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Texto-principal Texto-principal"
+        "informacion-inicio informacion-inicio2"
+        "datos-inicio datos-inicio";
 }
 
-.contenedor {
-    color: whitesmoke;
-    text-align: center;
-    position: relative;
-    z-index: 2;
+.Texto-principal {
+    grid-area: Texto-principal;
+    padding: 150px;
+    padding-top: 25%;
+    text-align: justify;
+    background-color: #161816;
+    color: white;
+    font-family: $textos;
+}
 
+.informacion-inicio {
+    grid-area: informacion-inicio;
+    background-color: #272c27;
+    text-align:justify;
+    color: white;
+    font-family: $textos;
+    padding: 30px;
+}
+
+.informacion-inicio2 {
+    grid-area: informacion-inicio2;
+    background-color: #272c27;
+    text-align:justify;
+    color: white;
+    font-family: $textos;
+    padding: 30px;
+
+}
+
+.datos-inicio {
+    grid-area: datos-inicio;
+    background-color: #161816;
+    text-align:justify;
+    color: white;
+    font-family: $textos;
+    padding: 30px;
+}
+
+
+.grilla h1{
+    text-align:center;
 }
