@@ -97,7 +97,7 @@ ul {
 
 .flex-contacto {
   background-color: #161816;
-  padding: 200px;
+  padding: 17px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -248,23 +248,80 @@ input {
   display: flex;
   justify-content: center; }
 
-section {
-  display: flex;
-  height: 430px;
-  align-items: center; }
+.linea {
+  background-color: #272c27;
+  height: 5px;
+  width: 100%;
+  display: block; }
 
-section img {
-  width: 0px;
-  flex-grow: 1;
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden; }
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
   object-fit: cover;
-  opacity: 8;
-  transition: .5s ease; }
+  transition: transform 0.5s; }
 
-section img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%); }
+.galeria a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
+
+.galeria a:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3); }
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); }
+
+.light-box img {
+  width: 53vw;
+  max-height: 89vh; }
+
+.light-box:target {
+  transform: scale(1); }
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #e41779;
+  color: white;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%; }
+
+.next {
+  display: block;
+  background: #e41779;
+  color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center; }
 
 /*shop*/
 img {
@@ -323,8 +380,8 @@ img {
 
 .galeria {
   width: 75 vw;
-  max-width: 600px;
-  min-width: 320px;
+  max-width: 900px;
+  min-width: 400px;
   margin: auto; }
 
 @media screen and (max-width: 800px) {
@@ -333,6 +390,69 @@ img {
     grid-template-columns: auto;
     gap: 20px;
     padding: 20px; } }
+
+.informacion-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 0.7fr 0.8fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "contacto-box contacto-box contacto-box" "info-1 info-2 info-3" "mapa-contacto mapa-contacto mapa-contacto"; }
+
+.contacto-box {
+  grid-area: contacto-box; }
+
+.info-1 {
+  grid-area: info-1;
+  background-color: #272c27;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.info-2 {
+  grid-area: info-2;
+  background-color: #272c27;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.info-3 {
+  grid-area: info-3;
+  background-color: #272c27;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.mapa-contacto {
+  grid-area: mapa-contacto;
+  padding-top: 50px; }
+
+.img-info1 {
+  width: 50px;
+  height: 50px;
+  justify-content: center; }
+
+.titulo-pagina-contacto {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+.parrafo-contacto {
+  color: white;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: small; }
+
+@media screen and (max-width: 800px) {
+  .informacion-contacto {
+    display: block; } }
 
 .nav {
   position: relative;
